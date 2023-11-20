@@ -2,10 +2,51 @@
     <string name="app_name">GrapeWave Mobile</string>
     <string name="title_activity_modulo2_register">Modulo2Register</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="first_fragment_label">Terminos y Condiciones</string>
+    <string name="second_fragment_label">Terminos y Condiciones</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Regresar</string>
+
+    <string name="terminos1">Términos y Condiciones del Servicio\n
+\n
+\nBienvenido a GrapeWave, la aplicación de inventario diseñada para optimizar la gestión en entornos comerciales. Antes de utilizar nuestros servicios, por favor, lea detenidamente los siguientes términos y condiciones.
+\n
+\n1. Aceptación de Términos:
+\nAl acceder o utilizar la aplicación, usted acepta estar sujeto a estos términos y condiciones. Si no está de acuerdo con alguno de los términos establecidos, le recomendamos que no utilice nuestros servicios.
+\n
+\n2. Uso Autorizado:
+\nLa aplicación está destinada para el uso de empresas y entidades comerciales. Al registrarse, usted confirma que tiene la autoridad para representar y vincular a su empresa a estos términos.
+\n
+\n3. Acceso y Roles de Usuario:
+\nEl acceso a la aplicación se gestiona a través de roles de usuario definidos (Superusuario, Dueño de Tienda, Gerente de Sucursal, Empleado). Cada usuario es responsable de mantener la confidencialidad de sus credenciales de inicio de sesión y garantizar que solo las personas autorizadas tengan acceso.
+\n
+\n4. Protección de Datos:
+\nLa seguridad de los datos es una prioridad. Implementamos medidas de seguridad, incluido el cifrado asimétrico, para proteger la privacidad de la información almacenada y transmitida a través de la aplicación.
+\n
+\n5. Registro y Transacciones:
+\nLos usuarios son responsables de la exactitud de la información registrada en la aplicación. Nos reservamos el derecho de auditar transacciones y registros para garantizar el cumplimiento de estos términos y condiciones.
+</string>
+    <string name="terminos2">
+        6. Responsabilidades de los Usuarios:
+\nLos usuarios se comprometen a utilizar la aplicación de manera ética y legal. No se tolerará el uso indebido, la manipulación maliciosa de datos o cualquier actividad que viole la ley o estos términos.
+\n
+\n7. Interrupciones del Servicio:
+\nNos esforzamos por mantener la disponibilidad constante de la aplicación, pero no garantizamos que el servicio esté libre de interrupciones. Nos reservamos el derecho de realizar mantenimientos programados y mejoras, notificando previamente cuando sea posible.
+\n
+\n8. Propiedad Intelectual:
+\nLa aplicación, su código fuente, diseño y contenido son propiedad exclusiva de Limack. No está permitido copiar, modificar, distribuir o reproducir ninguna parte de la aplicación sin autorización.
+\n
+\n9. Cambios en los Términos:
+\nNos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Los cambios entrarán en vigencia inmediatamente después de su publicación. Es responsabilidad del usuario revisar periódicamente los términos actualizados.
+\n
+\n10. Terminación del Servicio:
+\nNos reservamos el derecho de suspender o terminar su acceso a la aplicación en caso de violación de estos términos y condiciones.
+\n
+\n11. Ley Aplicable:
+\nEstos términos y condiciones se rigen por las leyes del [País], y cualquier disputa se resolverá mediante arbitraje de conformidad con las leyes aplicables.
+\n
+\nAl utilizar nuestra aplicación, usted acepta cumplir con estos términos y condiciones. Si tiene alguna pregunta o inquietud, no dude en ponerse en contacto con nuestro equipo de soporte. Gracias por elegir GrapeWave para sus necesidades de gestión de inventario.
+    </string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -43,4 +84,5 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="title_activity_main6">MainActivity6</string>
 </resources>

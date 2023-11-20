@@ -91,4 +91,13 @@
         android:layout_centerHorizontal="true"
         app:cornerRadius="50dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/termsAndCon"
+        android:text="Terminos condiciones y contacto"
+        android:textColor="@color/green"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="800dp"/>
+
 </RelativeLayout>
