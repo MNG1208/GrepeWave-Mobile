@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuAdm_Emp"
+    android:background="@color/black"
+    android:padding="30dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logosmall"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Administrador"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:layout_width="800dp"
+        android:layout_height="3dp"
+        android:background="@color/grey"
+        android:layout_marginTop="80dp"/>
+
+    <ImageButton
+        android:layout_width="160dp"
+        android:id="@+id/btnAddEmpleados"
+        android:layout_height="160dp"
+        android:src="@drawable/addemp"
+        android:padding="6dp"
+        android:scaleType="centerInside"
+        android:layout_marginTop="190dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        />
+
+    <ImageButton
+        android:layout_width="160dp"
+        android:id="@+id/btnDelEmpleados"
+        android:layout_height="160dp"
+        android:padding="6dp"
+        android:src="@drawable/delemp"
+        android:scaleType="centerInside"
+        android:layout_marginTop="410dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        />
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Agregar Empleados"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Eliminar empleados"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"/>
+
+
+
+
+</RelativeLayout>
