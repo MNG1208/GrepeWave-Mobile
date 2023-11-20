@@ -14,14 +14,7 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        Button app = findViewById(R.id.btnLogin);
-        app.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity3.this,MenuAdm.class);
-                startActivity(intent);
-            }
-        });
+       
 
     }
 }
