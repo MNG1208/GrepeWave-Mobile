@@ -47,6 +47,7 @@
         android:layout_marginTop="290dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/rounded_button"
+        android:padding="6dp"
         />
 
     <ImageButton
@@ -58,6 +59,7 @@
         android:layout_marginTop="550dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/rounded_button"
+        android:padding="6dp"
         />
 
     <TextView
