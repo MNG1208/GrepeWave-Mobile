@@ -39,7 +39,7 @@
         android:textSize="31dp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:id="@+id/codUser"
+        android:id="@+id/codigoUser"
         android:layout_marginTop="520dp"/>
 
     <ImageView

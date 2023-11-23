@@ -3,11 +3,15 @@ package com.example.grapewavemobile;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.grapewavemobile.db.DbHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         View circleView = findViewById(R.id.circleView);
         GradientDrawable gradientDrawable = new GradientDrawable();
         gradientDrawable.setShape(GradientDrawable.OVAL);
-        gradientDrawable.setColor(getResources().getColor(R.color.white)); // Reemplaza con el color que desees
+        gradientDrawable.setColor(getResources().getColor(R.color.white));
         circleView.setBackground(gradientDrawable);
 
         Button btnContinuar = findViewById(R.id.btnContinuar);
@@ -28,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, InicOrReg.class);
                 startActivity(intent);
+
+                DbHelper dbHelper = new DbHelper(MainActivity.this);
+                SQLiteDatabase db = dbHelper.getWritableDatabase();
+                if (db != null){
+                    Toast.makeText(MainActivity.this,"Arrancamos",Toast.LENGTH_LONG).show();
+                }else {
+                    Toast.makeText(MainActivity.this,"Los motores siguen fríos",Toast.LENGTH_LONG).show();
+                }
+
             }
         });
 

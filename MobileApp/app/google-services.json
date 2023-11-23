@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "311328557768",
+    "project_id": "grapewave-mobile",
+    "storage_bucket": "grapewave-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311328557768:android:d8e4aa19854c335c4133fd",
+        "android_client_info": {
+          "package_name": "com.example.grapewavemobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3wmmYbT97TDjz96d1Rq9FJ6CR4GRgZE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
