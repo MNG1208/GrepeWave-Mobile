@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RegistroDeUsuario extends AppCompatActivity {
+public class RegistroDelEmpleado extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class RegistroDeUsuario extends AppCompatActivity {
         setContentView(R.layout.activity_registro_de_usuario);
 
         Base User = new Base(this, "Grape_Wave", null, 1);
-        SQLiteDatabase basedatos = User.getWritableDatabase();
+        SQLiteDatabase basedatosE = User.getWritableDatabase();
 
         EditText Nombre = findViewById(R.id.editTextNombre);
         EditText APaterno = findViewById(R.id.editTextApPaterno);
@@ -50,27 +50,27 @@ public class RegistroDeUsuario extends AppCompatActivity {
 
                 // Verifica que las contraseñas coincidan
                 if (!password.equals(repassword)) {
-                    Toast.makeText(RegistroDeUsuario.this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistroDelEmpleado.this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 ContentValues user= new ContentValues();
-                user.put("Nombre", nombre);
-                user.put("Ap_Paterno", apPaterno);
-                user.put("Ap_Materno", apMaterno);
-                user.put("Telefono", telefono);
-                user.put("Calle", calle);
-                user.put("Num_Domicilio", numDomicilio);
-                user.put("Colonia", colonia);
-                user.put("Municipio", municipio);
-                user.put("Correo_Electronico", email);
-                user.put("Contraseña", password);
-                user.put("Confirmar_Contraseña", repassword);
+                user.put("NombreE", nombre);
+                user.put("Ap_PaternoE", apPaterno);
+                user.put("Ap_MaternoE", apMaterno);
+                user.put("TelefonoE", telefono);
+                user.put("CalleE", calle);
+                user.put("Num_DomicilioE", numDomicilio);
+                user.put("ColoniaE", colonia);
+                user.put("MunicipioE", municipio);
+                user.put("Correo_ElectronicoE", email);
+                user.put("ContraseñaE", password);
+                user.put("Confirmar_ContraseñaE", repassword);
 
 
-                basedatos.insert("Usuarios", null,user);
-                basedatos.close();
-                Toast.makeText(RegistroDeUsuario.this, "Dado de alta", Toast.LENGTH_LONG).show();
+                basedatosE.insert("UsuariosEmp", null,user);
+                basedatosE.close();
+                Toast.makeText(RegistroDelEmpleado.this, "Dado de alta", Toast.LENGTH_LONG).show();
 
 
             }

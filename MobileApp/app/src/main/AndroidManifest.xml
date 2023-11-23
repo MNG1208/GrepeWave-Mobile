@@ -15,6 +15,12 @@
         android:theme="@style/Theme.GrapeWaveMobile"
         tools:targetApi="31">
         <activity
+            android:name=".RegistroDelEmpleado"
+            android:exported="false" />
+        <activity
+            android:name=".UnoUOtro"
+            android:exported="false" />
+        <activity
             android:name=".DelEmp"
             android:exported="false" />
         <activity

@@ -7,12 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class InicOrReg extends AppCompatActivity {
-
+public class UnoUOtro extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inic_or_reg);
+        setContentView(R.layout.activity_uno_uotro);
 
         ImageButton myImageButton = findViewById(R.id.myImageButton);
         ImageButton myImageButton2 = findViewById(R.id.myImageButton2);
@@ -20,7 +19,7 @@ public class InicOrReg extends AppCompatActivity {
         myImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(InicOrReg.this,MainActivity2.class);
+                Intent intent = new Intent(UnoUOtro.this, RegistroDeUsuario.class);
                 startActivity(intent);
             }
         });
@@ -28,10 +27,9 @@ public class InicOrReg extends AppCompatActivity {
         myImageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(InicOrReg.this,UnoUOtro.class);
-                startActivity(intent2);
+                Intent intent = new Intent(UnoUOtro.this, RegistroDelEmpleado.class);
+                startActivity(intent);
             }
         });
-
     }
 }

@@ -33,72 +33,94 @@
             android:id="@+id/editTextNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nombre" />
+            android:hint="Nombre"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/editTextApPaterno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Apellido Paterno" />
+            android:hint="Apellido Paterno"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/editTextApMaterno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Apellido Materno" />
+            android:hint="Apellido Materno"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/editTextTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
-            android:hint="Teléfono" />
+            android:hint="Teléfono"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/editTextCalle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Calle" />
+            android:hint="Calle"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/editTextNumDomicilio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:hint="Número de Domicilio" />
+            android:hint="Número de Domicilio"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/editTextColonia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Colonia" />
+            android:hint="Colonia"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/editTextMunicipio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Municipio" />
+            android:hint="Municipio"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/editTextCorreoElectronico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:hint="Correo Electrónico" />
+            android:hint="Correo Electrónico"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/editTextContrasena"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:hint="Contraseña" />
+            android:hint="Contraseña"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/editTextConfirmarContrasena"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:hint="Confirmar Contraseña" />
+            android:hint="Confirmar Contraseña"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
 
         <Button
             android:layout_marginTop="8dp"
