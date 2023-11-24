@@ -1,6 +1,7 @@
 package com.example.grapewavemobile;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -36,6 +37,7 @@ public class RegistroDeUsuario extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Obtén los valores de los campos
+
                 String nombre = Nombre.getText().toString();
                 String apPaterno = APaterno.getText().toString();
                 String apMaterno = AMaterno.getText().toString();
@@ -67,12 +69,17 @@ public class RegistroDeUsuario extends AppCompatActivity {
                 user.put("Contraseña", password);
                 user.put("Confirmar_Contraseña", repassword);
 
+                long userId = basedatos.insert("Usuarios", null, user);
+
 
                 basedatos.insert("Usuarios", null,user);
                 basedatos.close();
                 Toast.makeText(RegistroDeUsuario.this, "Dado de alta", Toast.LENGTH_LONG).show();
 
 
+                Intent intent = new Intent(RegistroDeUsuario.this, RegistroExitoso.class);
+                intent.putExtra("userId", userId);
+                startActivity(intent);
             }
         });
     }

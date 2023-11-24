@@ -1,6 +1,7 @@
 package com.example.grapewavemobile;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -67,11 +68,16 @@ public class RegistroDelEmpleado extends AppCompatActivity {
                 user.put("ContraseñaE", password);
                 user.put("Confirmar_ContraseñaE", repassword);
 
+                long userId = basedatosE.insert("UsuariosEmp", null, user);
+
 
                 basedatosE.insert("UsuariosEmp", null,user);
                 basedatosE.close();
                 Toast.makeText(RegistroDelEmpleado.this, "Dado de alta", Toast.LENGTH_LONG).show();
 
+                Intent intent = new Intent(RegistroDelEmpleado.this, RegistroExitoso.class);
+                intent.putExtra("userId", userId);
+                startActivity(intent);
 
             }
         });

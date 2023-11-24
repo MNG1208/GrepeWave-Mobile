@@ -1,7 +1,9 @@
 package com.example.grapewavemobile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class RegistroExitoso extends AppCompatActivity {
@@ -11,11 +13,11 @@ public class RegistroExitoso extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro_exitoso);
 
-        // Obtiene el Id_Usuario de los extras
-        long idUsuario = getIntent().getLongExtra("Id_Usuario", -1);
+        // Obtiene el ID de usuario pasado como extra
+        long userId = getIntent().getLongExtra("userId", -1);
 
-        // Muestra el Id_Usuario en el TextView correspondiente
+        // Muestra el ID de usuario en el EditText con id "codigoUser"
         TextView codigoUser = findViewById(R.id.codigoUser);
-        codigoUser.setText(String.valueOf(idUsuario));
+        codigoUser.setText(String.valueOf(userId));
     }
 }
