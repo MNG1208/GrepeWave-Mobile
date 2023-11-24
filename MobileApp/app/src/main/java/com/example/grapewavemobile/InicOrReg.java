@@ -20,7 +20,7 @@ public class InicOrReg extends AppCompatActivity {
         myImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(InicOrReg.this,MainActivity2.class);
+                Intent intent = new Intent(InicOrReg.this, SeleccionPerfil.class);
                 startActivity(intent);
             }
         });

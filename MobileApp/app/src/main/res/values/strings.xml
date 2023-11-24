@@ -85,4 +85,15 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="title_activity_main6">MainActivity6</string>
+    <string name="title_activity_navegador">Navegador</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Empleados">Empleados</string>
+    <string name="Informes">Informes</string>
+    <string name="Inventario">Inventario</string>
 </resources>

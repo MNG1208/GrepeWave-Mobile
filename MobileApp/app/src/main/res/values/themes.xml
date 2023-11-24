@@ -6,4 +6,13 @@
     </style>
 
     <style name="Theme.GrapeWaveMobile" parent="Base.Theme.GrapeWaveMobile" />
+
+    <style name="Theme.GrapeWaveMobile.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.GrapeWaveMobile.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.GrapeWaveMobile.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

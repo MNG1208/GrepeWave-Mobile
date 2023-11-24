@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class MainActivity2 extends AppCompatActivity {
+public class SeleccionPerfil extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class MainActivity2 extends AppCompatActivity {
         IMGbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
+                Intent intent = new Intent(SeleccionPerfil.this, MainActivity3.class);
                 startActivity(intent);
             }
         });
@@ -28,7 +28,7 @@ public class MainActivity2 extends AppCompatActivity {
         IMGbtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity2.this, MainActivity4.class);
+                Intent intent = new Intent(SeleccionPerfil.this, MainActivity4.class);
                 startActivity(intent);
             }
         });
